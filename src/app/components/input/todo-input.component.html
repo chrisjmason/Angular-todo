@@ -1,0 +1,7 @@
+<div class="row">
+  <input class="todo-input large-8 large-centered"
+         autofocus=""
+         placeholder="What do you need to do?"
+         [(ngModel)]="todoTask"
+         (keyup.enter)="addTodo()" >
+</div>
