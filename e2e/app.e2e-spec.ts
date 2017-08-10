@@ -7,8 +7,13 @@ describe('my-app App', () => {
     page = new MyAppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display todo input', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getToDoInput()).not.toBeNull();
   });
+
+  it('should display todo list', () => {
+    page.navigateTo();
+    expect(page.getToDoList()).not.toBeNull();
+  })
 });

@@ -5,7 +5,11 @@ export class MyAppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getToDoInput() {
+    return element(by.css('todo-input'));
+  }
+
+  getToDoList() {
+    return element(by.css('todo-list'));
   }
 }

@@ -1,11 +1,7 @@
-
-
-
-
-          <div class="main">
-            <todo-input (newTodoEvent)="addTodo($event)"></todo-input>
-            <todo-list (deleteTodoEvent)="deleteTodo($event)" [todoList]="todolist"></todo-list>
-          </div>
+<div class="main">
+  <todo-input (newTodoEvent)="addTodo($event)"></todo-input>
+  <todo-list (deleteTodoEvent)="deleteTodo($event)" [todoList]="todolist"></todo-list>
+</div>
 
 
 
